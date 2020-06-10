@@ -15,7 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 repositories {
 	mavenLocal()
@@ -24,8 +24,8 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
-	compile project(':spring-boot:modular:security-module')
-	compile project(':spring-boot:modular:booking-module')
+	compile project(':security-module')
+	compile project(':booking-module')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
